@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 0%, 95%);
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+}
+main {
+  display: flex;
+  width: 1050px;
+  height: 600px;
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.5);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 2;
+  padding-bottom: 50px;
+}
+
+header {
+  color: hsl(0, 0%, 95%);
+  font-size: 40px;
+  padding-bottom: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: hsl(0, 0%, 95%);
+  font-family: "Lexend Deca", sans-serif;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 70px;
+  width: 350px;
+  height: 600px;
+}
+img {
+  width: 65px;
+  height: auto;
+  padding-bottom: 50px;
+}
+.sedans {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: hsl(31, 77%, 52%);
+}
+.suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+.luxury {
+  background-color: hsl(179, 100%, 13%);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.button-sedans,
+.button-suvs,
+.button-luxury {
+  background-color: #fff;
+  padding: 15px 35px;
+  border-radius: 30px;
+  font-size: 15px;
+  margin-top: auto;
+  color: transparent;
+}
+.button-sedans {
+  color: hsl(31, 77%, 52%);
+}
+.button-suvs {
+  color: hsl(184, 100%, 22%);
+}
+.button-luxury {
+  color: hsla(179, 100%, 13%);
+}
+
+.button-sedans:hover,
+.button-suvs:hover,
+.button-luxury:hover {
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  border: white solid 2px;
+}
+
+/* For mobile  */
+@media (max-width: 375px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: auto;
+    margin: 20px auto;
+  }
+  .sedans {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+  }
+
+  .luxury {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+}
